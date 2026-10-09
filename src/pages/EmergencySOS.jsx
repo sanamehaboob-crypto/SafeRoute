@@ -276,11 +276,7 @@ export const EmergencySOS = () => {
         
         <div className="bg-red-700/50 rounded-xl p-6 mb-8 w-full max-w-md">
           <div className="flex flex-col items-center justify-center gap-2 mb-4 text-center">
-            {whatsappResult && whatsappResult.delivered > 0 ? (
-              <p className="font-bold text-green-300">WhatsApp alert submitted for {whatsappResult.delivered} contact(s). (Pending delivery)</p>
-            ) : (
-              <p className="font-bold text-red-300">{whatsappResult?.errorMessage || "WhatsApp notification failed or not configured."}</p>
-            )}
+            
             
             <div className="flex items-center justify-center gap-2 mt-2">
               <div className="h-3 w-3 rounded-full bg-green-400 animate-pulse" />
